@@ -1,0 +1,386 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6e6;
+    color: #333;
+}
+
+header {
+    background-color: #ffcccc;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 2em;
+    color: #b30000;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #b30000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.hero {
+    background: url('file:///C:/Users/HP%20ELITEBOOK%20830%20G5/Desktop/TEST%202/HEROIC.jpg') no-repeat center center/cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.hero h2 {
+    font-family: 'Playfair Display', sans-serif; /* Specify the font you want */
+    font-size: 4em; /* You can adjust the size */
+    font-weight: bold; /* Adjust the font weight */
+    color: #fff; /* Change text color */
+    text-align: center; /* Center-align text */
+    text-shadow: 2px 2px 4px rgba(46, 10, 10, 0.7); /* Optional text shadow for contrast */
+}
+
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #b30000;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ffcccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 1em;
+    color: #666;
+}
+
+.product .price {
+    font-size: 1.2em;
+    color: #b30000;
+    margin: 10px 0;
+}
+
+.product button {
+    background-color: #b30000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.product button:hover {
+    background-color: #800000;
+}
+
+.cta-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 20px;
+    background-image: url('https://placehold.it/1200x800'); /* Background image for the section */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.cta-column {
+    flex: 1;
+    height: 450px; /* Increased height for each column */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cta-column:nth-child(1) {
+    background-image: url('file:///C:/Users/HP%20ELITEBOOK%20830%20G5/Desktop/TEST%202/CT2.jpg'); /* Image for first column */
+}
+
+.cta-column:nth-child(2) {
+    background-image: url('file:///C:/Users/HP%20ELITEBOOK%20830%20G5/Desktop/TEST%202/CT1.jpg'); /* Image for second column */
+}
+
+.cta-column h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.cta-column p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.cta-column button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-column button:hover {
+    background-color: #ff4c40;
+}
+
+  
+  @media (max-width: 768px) {
+    .cta-section {
+      flex-direction: column;
+      align-items: center;
+    }
+    .cta-column {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+  .subscribe-section {
+    background: url('file:///C:/Users/HP%20ELITEBOOK%20830%20G5/Desktop/TEST%202/SUBSCRIBE.jpeg') center/cover no-repeat, 
+                linear-gradient(to right, rgba(255, 153, 153, 0.9), rgba(255, 204, 204, 0.9));
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+  
+  
+  .subscribe-section h2 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .subscribe-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .subscribe-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .subscribe-section input[type="email"] {
+    width: 300px;
+    padding: 15px;
+    font-size: 1em;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .subscribe-section input[type="email"]:focus {
+    border-color: #b30000;
+  }
+  
+  .subscribe-section button {
+    background-color: #b30000;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .subscribe-section button:hover {
+    background-color: #800000;
+    transform: scale(1.05);
+  }
+  
+  .subscribe-section button:active {
+    transform: scale(1);
+  }
+  
+  @media (max-width: 768px) {
+    .subscribe-section input[type="email"] {
+      width: 80%;
+    }
+  
+    .subscribe-section form {
+      flex-direction: column;
+    }
+  
+    .subscribe-section button {
+      width: 80%;
+    }
+  }
+  
+  
+footer {
+    background-color: #ffcccc;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.state-form {
+    background: linear-gradient(to right, #ffcccc, #ffe6e6);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .state-form:hover {
+    transform: scale(1.05);
+  }
+  
+  .state-form select {
+    width: 200px;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #b30000;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .state-form select:focus {
+    border-color: #b30000;
+    box-shadow: 0 0 5px rgba(179, 0, 0, 0.5);
+  }
+  
+  .state-form select:hover {
+    background-color: #ffe6e6;
+  }
+  
+  .state-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    color: #b30000;
+    font-weight: bold;
+  }
+  
+  .state-form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #b30000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .state-form button:hover {
+    background-color: #800000;
+    transform: scale(1.05);
+  }
+  
+  .state-form button:active {
+    transform: scale(1);
+  }
+  
+
+footer .copyright {
+    flex: 1;
+    text-align: center;
+    font-size: 1em;
+    color: #b30000;
+}
+
+footer .payment-partners {
+    flex: 1;
+    text-align: right;
+}
+
+footer .payment-partners img {
+    height: 30px;
+    margin-left: 10px;
+}

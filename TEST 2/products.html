@@ -1,0 +1,590 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Elysian Candle Bar - Products
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">/
+
+  <style>
+   body {
+    font-family: 'Playfair Display', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6e6;
+            color: #333;
+        }
+        header {
+            background-color: #ffcccc;
+            padding: 10px 0;
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .logo {
+            font-size: 2em;
+            color: #b30000;
+        }
+        nav {
+            display: flex;
+        }
+        nav a {
+            color: #b30000;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        .brand-background {
+        
+  position: relative;
+  background-image: url('file:///C:/Users/HP%20ELITEBOOK%20830%20G5/Desktop/TEST%202/BCK2.png'); /* Use a relative path or a server path */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px;
+}
+
+
+
+    .brand-background h1 {
+      font-size: 3em;
+      font-weight: 700;
+    }
+
+    .brand-background p {
+      font-size: 1.5em;
+    }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #b30000;
+        }
+        .section p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ffcccc;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .product h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 1em;
+            color: #666;
+        }
+        .product .price {
+            font-size: 1.2em;
+            color: #b30000;
+            margin: 10px 0;
+        }
+        .product button {
+            background-color: #b30000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .product button:hover {
+            background-color: #800000;
+        }
+        .see-more-btn {
+  background-color: #b30000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-top: 20px; /* Adds space between products and button */
+}
+
+.see-more-btn:hover {
+  background-color: #800000; /* Darker shade when hovered */
+}
+.newsletter {
+  background-color: #ffcccc; /* Background color for the section */
+  padding: 40px 20px; /* Padding around the content */
+  text-align: center;
+  color: #333;
+  margin-top: 40px;
+}
+
+.newsletter h3 {
+  font-size: 2em;
+  color: #b30000; /* Red color for the heading */
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #b30000;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 60%;
+}
+
+.newsletter button {
+  background-color: #b30000;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #800000;
+}
+
+
+        footer {
+            background-color: #ffcccc;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        footer .state-form {
+            flex: 1;
+        }
+        footer .state-form select {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #b30000;
+            border-radius: 5px;
+        }
+        footer .copyright {
+            flex: 1;
+            text-align: center;
+            font-size: 1em;
+            color: #b30000;
+        }
+        footer .payment-partners {
+            flex: 1;
+            text-align: right;
+        }
+        footer .payment-partners img {
+            height: 30px;
+            margin-left: 10px;
+        }
+  </style>
+ </head>
+ <body>
+  <header>
+   <div class="header-container">
+    <div class="logo">
+     Kim's Luxurious Candles
+    </div>
+    <nav>
+        <a href="main.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+   </div>
+  </header>
+  <div class="brand-background">
+    <h1>Kim's Luxurious Candles</h1>
+    <p>Elevate your surroundings with luxury candles, bags, and accessories.</p>
+  </div>
+  <div class="section">
+   <h2>
+    Home Decor
+   </h2>
+   <p>
+    Beautify your home with our exquisite home decor items.
+   </p>
+   <div class="products">
+    <div class="product">
+     <img alt="Handcrafted candle in a glass jar with a wooden lid" height="300" src="file:///C:/Users/HP%20ELITEBOOK%20830%20G5/Desktop/TEST%202/HD1.jpg"/>
+      <h3> 
+        Engraved Chanpagne bucket
+     </h3>
+     <p>
+      A soothing blend of lavender and vanilla.
+     </p>
+     <div class="price">
+      $15.00
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+    <div class="product">
+     <img alt="Handcrafted candle in a tin container with floral design" height="300"  src="file:///C:/Users/HP%20ELITEBOOK%20830%20G5/Desktop/TEST%202/HD2.png" width="300"/>
+     <h3>
+      Flower Vase
+     </h3>
+     <p>
+      Experience the essence of a blooming rose garden.
+     </p>
+     <div class="price">
+      $18.00
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+    <div class="product">
+     <img alt="Handcrafted candle in a ceramic container with a rustic look" height="300" src="file:///C:/Users/HP%20ELITEBOOK%20830%20G5/Desktop/TEST%202/HD3.png" width="300"/>
+     <h3>
+      Cup Holder
+     </h3>
+     <p>
+      A warm and inviting blend of spices and wood.
+     </p>
+     <div class="price">
+      $20.00
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+   </div>
+  </div>
+  <a href="products.html">
+    <button class="see-more-btn">See More</button>
+  </a>
+</div>
+</div>
+  <div class="section">
+   <h2>
+    Bags
+   </h2>
+   <p>
+    Discover our exclusive collection of designer bags.
+   </p>
+   <div class="products">
+    <div class="product">
+     <img alt="Designer handbag with a sleek black finish" height="300" src="file:///C:/Users/HP%20ELITEBOOK%20830%20G5/Desktop/TEST%202/BG1.png" width="300"/>
+     <h3>
+      Sleek Black Handbag
+     </h3>
+     <p>
+      A stylish and elegant handbag for all occasions.
+     </p>
+     <div class="price">
+      $120.00
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+    <div class="product">
+     <img alt="Designer tote bag with a floral pattern" height="300"   src="file:///C:/Users/HP%20ELITEBOOK%20830%20G5/Desktop/TEST%202/BG2.jpg" width="300"/>
+     <h3>
+      Floral Tote Bag
+     </h3>
+     <p>
+      A spacious tote bag with a beautiful floral design.
+     </p>
+     <div class="price">
+      $80.00
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+    <div class="product">
+     <img alt="Designer clutch with a metallic finish" height="300"  src="file:///C:/Users/HP%20ELITEBOOK%20830%20G5/Desktop/TEST%202/BG3.jpeg" width="300"/>
+     <h3>
+      Metallic Clutch
+     </h3>
+     <p>
+      A chic clutch with a stunning metallic finish.
+     </p>
+     <div class="price">
+      $60.00
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+  </div>
+  <a href="products.html">
+    <button class="see-more-btn">See More</button>
+  </a>
+  <div class="section">
+   <h2>
+    Accessories
+   </h2>
+   <p>
+    Complete your look with our range of stylish accessories.
+   </p>
+   <div class="products">
+    <div class="product">
+     <img alt="Elegant scarf with a paisley pattern" height="300"   src="file:///C:/Users/HP%20ELITEBOOK%20830%20G5/Desktop/TEST%202/AS1.jpeg" width="300"/>
+     <h3>
+      Serene Candle 
+     </h3>
+     <p>
+      An elegant scarf with a classic paisley pattern.
+     </p>
+     <div class="price">
+      $25.00
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+    <div class="product">
+     <img alt="Stylish sunglasses with a black frame" height="300" src="file:///C:/Users/HP%20ELITEBOOK%20830%20G5/Desktop/TEST%202/AS2.jpg" width="300"/>
+     <h3>
+      Channel Table Ornament
+     </h3>
+     <p>
+      Stylish sunglasses with a sleek black frame.
+     </p>
+     <div class="price">
+      $45.00
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+    <div class="product">
+     <img alt="Leather belt with a silver buckle" height="300"  src="file:///C:/Users/HP%20ELITEBOOK%20830%20G5/Desktop/TEST%202/HP3.png" width="300"/>
+     <h3>
+     Teddy Bear Candle
+     </h3>
+     <p>
+      A high-quality leather belt with a silver buckle.
+     </p>
+     <div class="price">
+      $35.00
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+    <a href="products.html">
+        <button class="see-more-btn">See More</button>
+      </a>
+   </div>
+  </div>
+  <div class="newsletter">
+    <h3>Sign Up for Our Newsletter</h3>
+    <p>Get the latest updates and offers straight to your inbox.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+  <footer>
+   <div class="state-form">
+    <select>
+     <option value="AL">
+      Alabama
+     </option>
+     <option value="AK">
+      Alaska
+     </option>
+     <option value="AZ">
+      Arizona
+     </option>
+     <option value="AR">
+      Arkansas
+     </option>
+     <option value="CA">
+      California
+     </option>
+     <option value="CO">
+      Colorado
+     </option>
+     <option value="CT">
+      Connecticut
+     </option>
+     <option value="DE">
+      Delaware
+     </option>
+     <option value="FL">
+      Florida
+     </option>
+     <option value="GA">
+      Georgia
+     </option>
+     <option value="HI">
+      Hawaii
+     </option>
+     <option value="ID">
+      Idaho
+     </option>
+     <option value="IL">
+      Illinois
+     </option>
+     <option value="IN">
+      Indiana
+     </option>
+     <option value="IA">
+      Iowa
+     </option>
+     <option value="KS">
+      Kansas
+     </option>
+     <option value="KY">
+      Kentucky
+     </option>
+     <option value="LA">
+      Louisiana
+     </option>
+     <option value="ME">
+      Maine
+     </option>
+     <option value="MD">
+      Maryland
+     </option>
+     <option value="MA">
+      Massachusetts
+     </option>
+     <option value="MI">
+      Michigan
+     </option>
+     <option value="MN">
+      Minnesota
+     </option>
+     <option value="MS">
+      Mississippi
+     </option>
+     <option value="MO">
+      Missouri
+     </option>
+     <option value="MT">
+      Montana
+     </option>
+     <option value="NE">
+      Nebraska
+     </option>
+     <option value="NV">
+      Nevada
+     </option>
+     <option value="NH">
+      New Hampshire
+     </option>
+     <option value="NJ">
+      New Jersey
+     </option>
+     <option value="NM">
+      New Mexico
+     </option>
+     <option value="NY">
+      New York
+     </option>
+     <option value="NC">
+      North Carolina
+     </option>
+     <option value="ND">
+      North Dakota
+     </option>
+     <option value="OH">
+      Ohio
+     </option>
+     <option value="OK">
+      Oklahoma
+     </option>
+     <option value="OR">
+      Oregon
+     </option>
+     <option value="PA">
+      Pennsylvania
+     </option>
+     <option value="RI">
+      Rhode Island
+     </option>
+     <option value="SC">
+      South Carolina
+     </option>
+     <option value="SD">
+      South Dakota
+     </option>
+     <option value="TN">
+      Tennessee
+     </option>
+     <option value="TX">
+      Texas
+     </option>
+     <option value="UT">
+      Utah
+     </option>
+     <option value="VT">
+      Vermont
+     </option>
+     <option value="VA">
+      Virginia
+     </option>
+     <option value="WA">
+      Washington
+     </option>
+     <option value="WV">
+      West Virginia
+     </option>
+     <option value="WI">
+      Wisconsin
+     </option>
+     <option value="WY">
+      Wyoming
+     </option>
+    </select>
+   </div>
+   <div class="copyright">
+    © 2023 Elysian Candle Bar. All rights reserved.
+   </div>
+   <div class="payment-partners">
+    <img alt="Visa logo" height="30" src="https://storage.googleapis.com/a1aa/image/S9fDxb4yNuWoJCU2WLTGbCQeKYjOzGbukqZUjeTyleVbiOIQB.jpg" title="Visa" width="50"/>
+    <img alt="MasterCard logo" height="30" src="https://storage.googleapis.com/a1aa/image/3VrxcJ5kDGreGCTVJ0m3pfkFctxjWb3vMuxG6oIulHTioDCUA.jpg" title="MasterCard" width="50"/>
+    <img alt="PayPal logo" height="30" src="https://storage.googleapis.com/a1aa/image/0aBf8l8kPk2uH6XBKZsAgcpDvqeFVOqR0fTUhrt2LREJRHEoA.jpg" title="PayPal" width="50"/>
+   </div>
+  </footer>
+ </body>
+</html>
